@@ -1,0 +1,155 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "ProximaNova", sans-serif;
+	font-size: 14px;
+}
+
+header {
+	padding: 16px 0 40px 0;
+	color: #0070bb;
+}
+header a {
+	
+}
+header .logo {
+	display: block;
+	float: left;
+	background-image: url(../img/logo.png);
+	width: 262px;
+	height: 75px;
+	margin: 24px 58px 0 20px;
+}
+header .logo > a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+header .links {
+	float: left;
+	padding-top: 10px;
+}
+header .links .social a {
+	font-size: 16px;
+}
+header .links .social a:hover {
+	color: #7fb7dd;
+}
+header .links .social a:active {
+	color: #004e83;
+}
+header .links .social a.sm {
+	font-size: 15px;
+}
+header .links .social a + a {
+	margin-left: 29px;
+}
+header .links ul.extra {
+	list-style: none;
+	padding: 0;
+	margin: 47px 0 0 0;
+}
+header .links ul.extra > li {
+	float: left;
+	padding: 0 18px;
+	height: 25px;
+	border-left: 1px solid #cce2f1;
+}
+header .links ul.extra > li:first-child {
+	padding-left: 0;
+	border-left: none;
+}
+header .links ul.extra > li:last-child {
+	padding-right: 0;
+}
+header .links ul.extra > li > a {
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: bold;
+	border-bottom: 1px solid #cce2f1;
+}
+header .links ul.extra > li > a:hover {
+	border-bottom: none;
+}
+header .links ul.extra > li > a:active {
+	color: #000;
+}
+header .login-search {
+	float: right;
+	margin-right: 20px;
+	margin-bottom: 4px;
+}
+header .login-search .login .btn-login {
+	border: 1px solid #0070bb;
+	background-color: transparent;
+	padding: 9px 17px;
+	line-height: 1;
+	outline: none;
+	margin-right: 18px;
+}
+header .login-search .login .btn-login .dashed {
+	display: inline-block;
+	line-height: 1;
+	border-bottom: 1px dashed #cce2f1;
+}
+header .login-search .login .btn-login .icon-drop {
+	font-size: 4px;
+	margin-left: 8px;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+}
+header .login-search .login .btn-login:hover {
+	padding-bottom: 10px;
+	background-color: #80b8dd;
+	border-color: #80b8dd;
+	color: #fff;
+}
+header .login-search .login .btn-login:hover .dashed {
+	border-bottom: none;
+}
+header .login-search .login .btn-login:active {
+	padding-bottom: 10px;
+	background-color: #0070bb;
+	border-color: #0070bb;
+	color: #fff;
+}
+header .login-search .login .btn-login:active .dashed {
+	border-bottom: none;
+}
+header .login-search .login .register {
+	border-bottom: 1px dashed #cce2f1;
+}
+header .login-search .login .register:hover {
+	color: #004e83;
+}
+header .login-search .login .register:active  {
+	color: #000;
+	border-bottom: none;
+}
+header .login-search .search {
+	margin-top: 20px;
+}
