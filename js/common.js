@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+	// Placeholder
+	$(".search_field").on("focus", function() {
+		if( $(this).val() == "Поиск по сайту" || $(this).val() == "" ) {
+			$(this).val("");
+		}
+	});
+	$(".search_field").on("blur", function() {
+		if( $(this).val() == "" ) {
+			$(this).val("Поиск по сайту");
+		}
+	});
+
 	//Parallax (Stellar)
 	//Документация: http://markdalgleish.com/projects/stellar.js/docs/
 	//<div class="image" data-stellar-background-ratio="0">...</div>
@@ -39,7 +51,13 @@ $(document).ready(function() {
 
 	//Каруселька
 	//Документация: http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html
-	$(".carousel").owlCarousel();
+	$(".owl-carousel").owlCarousel({
+		items: 1,
+		nav: true,
+		navText: ['<i class="icon-arrow-left"></i>','<i class="icon-arrow-right"></i>'],
+		dots: true,
+		loop: true
+	});
 
 	//Кнопка "Наверх"
 	//Документация:
