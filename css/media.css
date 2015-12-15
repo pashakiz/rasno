@@ -35,22 +35,28 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	section.nav-wrap .nav > .nav-item > .sub {
+		width: 720px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-	
+	section.nav-wrap .nav > .nav-item > .sub {
+		width: 940px;
+	}
 }
 
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 	.container {
-		width: 1010px;
+		width: 970px;
+	}
+	section.nav-wrap .nav > .nav-item > .sub {
+		width: 980px;
 	}
 }

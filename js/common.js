@@ -12,6 +12,18 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.readmore').on('click', function(){
+		if ( $(this).text() == "развернуть" ){
+			$(this).parents(".info").find(".text .full_text").show();
+			$(this).html("свернуть");
+			$(this).parents(".info").find(".text").removeClass("cuted");
+		} else {
+			$(this).parents(".info").find(".text .full_text").hide();
+			$(this).html("развернуть");
+			$(this).parents(".info").find(".text").addClass("cuted");
+		}
+	});
+
 	//Parallax (Stellar)
 	//Документация: http://markdalgleish.com/projects/stellar.js/docs/
 	//<div class="image" data-stellar-background-ratio="0">...</div>
@@ -56,7 +68,15 @@ $(document).ready(function() {
 		nav: true,
 		navText: ['<i class="icon-arrow-left"></i>','<i class="icon-arrow-right"></i>'],
 		dots: true,
-		loop: true
+		loop: true,
+		autoplay: true
+	});
+
+	$(".owl-carousel-news").owlCarousel({
+		items: 1,
+		dots: true,
+		loop: true,
+		autoplay: true
 	});
 
 	//Кнопка "Наверх"
