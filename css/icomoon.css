@@ -8,7 +8,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
 	font-family: 'icomoon' !important;
@@ -23,7 +22,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+.icon-bars:before {
+	content: "\e90a";
+}
 .icon-arrow-left:before {
 	content: "\e908";
 }
@@ -54,4 +55,3 @@
 .icon-vk:before {
 	content: "\e907";
 }
-
